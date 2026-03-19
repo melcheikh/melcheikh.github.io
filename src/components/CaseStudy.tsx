@@ -63,8 +63,18 @@ export default function CaseStudy() {
               </div>
             </div>
             
-            <a href="https://mikkatattoo.com" target="_blank" rel="noopener noreferrer" className="mt-10 inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors">
-              View Live Platform <CheckCircle2 size={16} />
+            <a 
+              href="https://mikkatattoo.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="mt-10 group relative inline-flex items-center justify-center gap-2 bg-cyan-600/20 border border-cyan-500/50 text-cyan-100 px-8 py-4 rounded-xl font-medium overflow-hidden transition-all hover:bg-cyan-600/30 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] w-fit"
+            >
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
+              
+              <span className="relative flex items-center gap-2">
+                View Live Platform <CheckCircle2 size={18} className="text-cyan-400" />
+              </span>
             </a>
           </div>
         </div>
